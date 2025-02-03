@@ -1,0 +1,12 @@
+/**
+ * Configuración principal de TypeScript
+ * Archivo raíz que referencia las configuraciones específicas
+ */
+
+ {
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },  // Configuración para la aplicación
+    { "path": "./tsconfig.node.json" }  // Configuración para Node.js
+  ]
+}

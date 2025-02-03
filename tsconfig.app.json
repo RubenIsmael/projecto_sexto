@@ -1,0 +1,29 @@
+/**
+ * Configuración de TypeScript para la aplicación React
+ * Define las opciones de compilación para el código fuente
+ */
+
+ {
+  "compilerOptions": {
+    "target": "ES2020",                // Versión de ECMAScript objetivo
+    "useDefineForClassFields": true,   // Usar 'define' para campos de clase
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Bibliotecas incluidas
+    "module": "ESNext",                // Sistema de módulos
+    "skipLibCheck": true,              // Omitir verificación de bibliotecas
+
+    /* Modo bundler */
+    "moduleResolution": "bundler",     // Resolución de módulos para bundlers
+    "allowImportingTsExtensions": true,// Permitir importar archivos .ts
+    "isolatedModules": true,          // Asegurar compatibilidad con transpiladores
+    "moduleDetection": "force",        // Forzar detección de módulos
+    "noEmit": true,                   // No emitir archivos JS
+    "jsx": "react-jsx",               // Soporte para JSX de React
+
+    /* Linting */
+    "strict": true,                   // Modo estricto
+    "noUnusedLocals": true,          // Error en variables locales sin usar
+    "noUnusedParameters": true,       // Error en parámetros sin usar
+    "noFallthroughCasesInSwitch": true // Error en casos switch sin break
+  },
+  "include": ["src"]                  // Archivos incluidos en la compilación
+}

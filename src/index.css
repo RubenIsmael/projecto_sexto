@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* src/index.css */
+@font-face {
+    font-family: 'Star Trek_future';
+    src: url('./assets/fonts/Star Trek_future.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
