@@ -89,15 +89,9 @@ export function ChatbotPage() {
             {messages.map((message, index) => (
               <div
                 key={index}
-                className={`flex ${message.isUser ? 'justify-end' : 'justify-start'}`}
+              className={`flex ${message.isUser ? 'justify-end' : 'justify-start'}`}
               >
-                <div
-                  className={`max-w-[80%] p-4 rounded-lg ${
-                    message.isUser
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-100 text-gray-800'
-                  }`}
-                >
+               <div key={index} className={`flex ${message.isUser ? 'justify-end' : 'justify-start'}`}>
                   {message.text}
                 </div>
               </div>
